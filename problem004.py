@@ -7,7 +7,7 @@
 def is_palindromic(number):
     string_forwards = str(number)
     string_backwards = string_forwards[::-1]
-    if string == string_backwards:
+    if string_forwards == string_backwards:
         return True
     return False
 
