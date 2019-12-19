@@ -15,11 +15,11 @@ if len(sys.argv) == 2:
     
 module_name = "problem{:03}".format(problem_num)
 file_name = module_name + '.py'
-if not os.path.exists(file_name):
+if not os.path.isfile(file_name):
     print("[!] file '{}' doesn't exist!".format(file_name))
     exit()
 
-print("[*] code started...")
+print("[*] running {}...".format(module_name))
 start_time = time.time()
 __import__(module_name)
 end_time = time.time()
